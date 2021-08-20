@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Hello from './hello';
+import 'tachyons';
+import {Characters} from './character';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <div>
+    <Hello picture={Characters[0].picture} name={Characters[0].username} email={Characters[0].email}/>
+     <Hello picture={Characters[1].picture} name={Characters[1].username} email={Characters[1].email}/>
+      <Hello picture={Characters[2].picture} name={Characters[2].username} email={Characters[2].email}/>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
